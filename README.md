@@ -30,7 +30,7 @@
 14. Now fill below values to create the data view. Under Index pattern, give the index pattern mentioned in logstash.conf file and click on 'Save data view to kibana' button.<br>
    <img src="https://github.com/user-attachments/assets/db18010b-4e18-4206-978c-b8ed5520fcfb" alt="Description" width="500" height="350"><br>
 15. Now logs should be visible as below.<br>
-   <img src="https://github.com/user-attachments/assets/39ca39e3-1e43-4726-9d43-1213f2a920d1" alt="Description" width="400" height="250"><br>
+   <img src="https://github.com/user-attachments/assets/39ca39e3-1e43-4726-9d43-1213f2a920d1" alt="Description" width="200" height="300"><br>
 
 
 
