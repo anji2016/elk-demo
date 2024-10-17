@@ -1,5 +1,8 @@
 # elk-demo
 
+Implemented below architecture:
+![image](https://github.com/user-attachments/assets/6d322e02-f463-489f-8f49-c6ea26636b59)
+
 ### Steps to run elk-demo
 1. Navigate to kafka-docker-compose folder and execute below command. This folder contains docker-compose file to run Kafka as a docker container.<br>
    1. **docker-compose up --build --force-recreate -d**
