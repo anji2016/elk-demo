@@ -24,7 +24,7 @@
 9. Now run below command in the same folder. This docker compose file will run kibana, elastic search, logstash and alpha-data-service containers.<br>
    1. **docker-compose up --build --force-recreate -d**<br>
 10. Now run below command to check the logs of alpha-data-service, if it is up and running.<br>
-   1. **docker-compose logs alpha-data-service**<br>
+   1. **docker-compose**
 11. Now give a hit to **http://localhost:8080/api/greet** url in the browser.<br>
 12. Then we should see the logs in the kibana. For this browse to http://localhost:5601 url. Click on Discover tab as below.<br>
    <img src="https://github.com/user-attachments/assets/0bfaad94-6ff8-4c8d-bf50-2be3577bf62f" alt="Description" width="500" height="350"><br>
