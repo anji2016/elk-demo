@@ -12,5 +12,15 @@
    3. **kafka-topics --bootstrap-server localhost:9092 --list**(this command lists all the avaialble topics in kafka cluster. Verify if the above created topic is listed)<br>
 5. We can verify the kafka container logs by running the below command.<br>
    1. **docker-compose logs kafka**
-6. Now navigate to alpha-data-service folder and provide the kafka topic name created in previous steps in application.properties file as below.<br>
+6. Now navigate to alpha-data-service folder and provide the kafka topic name created in previous steps in src/main/resources/application.properties file as below.<br>
    1. **kafka.topic=<topic_name>**
+7. Next need to build docker image for the alpha-data-service. Run below command to build docker image inside the alpha-data-service folder.
+   1. **docker build -t alpha-data-service .**
+8. Now navigate to docker-compose folder and provide the kafka topic name created in previous steps in logstash.conf file. Replace the kafka topic name in below two places.
+   1. ![image](https://github.com/user-attachments/assets/8e85315d-0260-4e0a-aec5-1aff07bdfb78)
+9. Now run below command in the same folder. This docker compose file will run kibana, elastic search, logstash and alpha-data-service containers.
+   1. **docker-compose up --build --force-recreate -d**
+10. Now run below command to check the logs of alpha-data-service, if it is up and running.
+   1. **docker-compose logs alpha-data-service**
+11. Now give a hit to **http://localhost:8080/api/greet** url in the browser.
+12. Then we should see the logs in the kibana. For this browse to http://localhost:5601 url. 
