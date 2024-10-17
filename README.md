@@ -17,20 +17,20 @@
 7. Next need to build docker image for the alpha-data-service. Run below command to build docker image inside the alpha-data-service folder.
    1. **docker build -t alpha-data-service .**
 8. Now navigate to docker-compose folder and provide the kafka topic name created in previous steps in logstash.conf file. Replace the kafka topic name in below two places.
-   1. ![image](https://github.com/user-attachments/assets/8e85315d-0260-4e0a-aec5-1aff07bdfb78)
+   <img src="https://github.com/user-attachments/assets/8e85315d-0260-4e0a-aec5-1aff07bdfb78" alt="Description" width="400" height="300">
 9. Now run below command in the same folder. This docker compose file will run kibana, elastic search, logstash and alpha-data-service containers.
    1. **docker-compose up --build --force-recreate -d**
 10. Now run below command to check the logs of alpha-data-service, if it is up and running.
    1. **docker-compose logs alpha-data-service**
 11. Now give a hit to **http://localhost:8080/api/greet** url in the browser.
 12. Then we should see the logs in the kibana. For this browse to http://localhost:5601 url. Click on Discover tab as below:
-    1. ![image](https://github.com/user-attachments/assets/0bfaad94-6ff8-4c8d-bf50-2be3577bf62f)
+   <img src="https://github.com/user-attachments/assets/0bfaad94-6ff8-4c8d-bf50-2be3577bf62f" alt="Description" width="400" height="300">
 13. Now click on 'create data view' button.
-    1. ![image](https://github.com/user-attachments/assets/b8de4ec8-d446-4af4-ae9c-db87130158e0)
+   <img src="https://github.com/user-attachments/assets/b8de4ec8-d446-4af4-ae9c-db87130158e0" alt="Description" width="400" height="300">
 14. Now fill below values to create the data view. Under Index pattern, give the index pattern mentioned in logstash.conf file and click on 'Save data view to kibana' button.
-    1. ![image](https://github.com/user-attachments/assets/db18010b-4e18-4206-978c-b8ed5520fcfb)
+   <img src="https://github.com/user-attachments/assets/db18010b-4e18-4206-978c-b8ed5520fcfb" alt="Description" width="400" height="300">
 15. Now logs should be visible as below.
-    1. ![image](https://github.com/user-attachments/assets/33b70678-afea-47d8-95a2-70b9f2f75801)
+   <img src="https://github.com/user-attachments/assets/33b70678-afea-47d8-95a2-70b9f2f75801" alt="Description" width="400" height="300">
 
 
 
