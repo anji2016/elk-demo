@@ -1,6 +1,6 @@
 # elk-demo
 
-Implemented below architecture:
+### Architecture
 ![image](https://github.com/user-attachments/assets/6d322e02-f463-489f-8f49-c6ea26636b59)
 
 ### Steps to run elk-demo
