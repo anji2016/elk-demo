@@ -2,9 +2,9 @@
 
 ###Steps to run elk-demo
 1. Navigate to kafka-docker-compose folder and execute below command. This folder contains docker-compose file to run Kafka as a docker container.<br>
-       **docker-compose up --build --force-recreate -d**
+            **docker-compose up --build --force-recreate -d**
 2. Now run below command to see if the docker container is running. The below command will list the running containers along with their metadata like Container ID, Image etc..<br>
-       **docker ps**
+            **docker ps**
 3. Now create a kafka topic by running below commands. The alpha-data-service will send logs to this kafka topic.<br>
    1. **docker exec -it kafka bash**(with this command we can go to the bash console of kafka container)<br>
    2. **kafka-topics --bootstrap-server localhost:9092 --create --topic <topic_name> --partitions 1 --replication-factor 1**<br>
