@@ -17,7 +17,7 @@
 7. Next need to build docker image for the alpha-data-service. Run below command to build docker image inside the alpha-data-service folder.
    1. **docker build -t alpha-data-service .**
 8. Now navigate to docker-compose folder and provide the kafka topic name created in previous steps in logstash.conf file. Replace the kafka topic name in below two places.<br>
-   <img src="https://github.com/user-attachments/assets/8e85315d-0260-4e0a-aec5-1aff07bdfb78" alt="Description" width="400" height="300"><br>
+   <img src="https://github.com/user-attachments/assets/8e85315d-0260-4e0a-aec5-1aff07bdfb78" alt="Description" width="500" height="350"><br>
 9. Now run below command in the same folder. This docker compose file will run kibana, elastic search, logstash and alpha-data-service containers.
    1. **docker-compose up --build --force-recreate -d**
 10. Now run below command to check the logs of alpha-data-service, if it is up and running.
@@ -28,7 +28,7 @@
 13. Now click on 'create data view' button.<br>
    <img src="https://github.com/user-attachments/assets/b8de4ec8-d446-4af4-ae9c-db87130158e0" alt="Description" width="500" height="350"><br>
 14. Now fill below values to create the data view. Under Index pattern, give the index pattern mentioned in logstash.conf file and click on 'Save data view to kibana' button.<br>
-   <img src="https://github.com/user-attachments/assets/db18010b-4e18-4206-978c-b8ed5520fcfb" alt="Description"><br>
+   <img src="https://github.com/user-attachments/assets/db18010b-4e18-4206-978c-b8ed5520fcfb" alt="Description" width="500" height="350"><br>
 15. Now logs should be visible as below.<br>
    <img src="https://github.com/user-attachments/assets/39ca39e3-1e43-4726-9d43-1213f2a920d1" alt="Description"><br>
 
